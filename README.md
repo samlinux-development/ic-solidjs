@@ -50,6 +50,7 @@ Open your browser and use the following URL scheme:
 Check the sayHelloTo function with the CLI cammand below:
 ```bash
 dfx canister call backend sayHelloTo '("Roland")'
+dfx canister call backend getLastName
 ```
 
 ## Deploying to the playground
