@@ -1,4 +1,4 @@
 service : {
-  bmi: (float64, float64) -> (float64) query;
-  sayHelloTo: (text) -> (text) query;
+  getLastName: () -> (text) query;
+  sayHelloTo: (text) -> (text);
 }

@@ -1,10 +1,12 @@
-import Float "mo:base/Float";
+
 actor {
-	public query func sayHelloTo(name : Text) : async Text {
-    return "Hello " # name # " 👋 ";
+  stable var lastName : Text = "World";
+	public shared func sayHelloTo(name : Text) : async Text {
+    lastName := name;
+    return "Hello " # lastName # " 👋 ";
   };
 
-  public query func bmi(height : Float, weight : Float) : async Float {
-    weight / (height/100 * height/100);
+  public shared query func getLastName() : async Text {
+    lastName;
   };
 };
